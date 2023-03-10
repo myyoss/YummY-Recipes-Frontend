@@ -41,7 +41,7 @@ const CreateRecipe = () => {
 
     try {
       await axios.post(
-        "http://localhost:3001/recipes",
+        "https://yummy-recipes-backend.onrender.com/recipes",
         { ...recipe },
         { headers: { authorization: cookies.access_token } }
       );

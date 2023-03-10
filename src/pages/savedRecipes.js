@@ -13,7 +13,7 @@ const SavedRecipes = () => {
     const getSavedRecipes = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:3001/recipes/savedRecipes/${userID}`
+          `https://yummy-recipes-backend.onrender.com/recipes/savedRecipes/${userID}`
         );
         setSavedRecipes(response.data.savedRecipes);
       } catch (error) {
