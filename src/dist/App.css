@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap");
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  font-family: "Noto Serif";
+  margin: 0;
+  padding: 0;
+}
+
+.auth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f2f2f2;
+}
+
+.auth-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  width: 400px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 1rem;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.navbar {
+  margin: 0;
+  width: 60%;
+  height: 80px;
+  border-bottom: 1px solid #9b9b9b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  gap: 1rem;
+}
+.navbar img {
+  width: 100px;
+  min-width: 100px;
+  padding: 0%;
+  margin: 0%;
+}
+.navbar button {
+  background-color: #b1070794;
+  border: 1px solid #e4baba7a;
+  border-radius: 50px;
+  color: #ffffff;
+  margin: 1rem 0;
+  padding: 0.5rem 2rem;
+  font-size: 14px;
+  cursor: pointer;
+  width: 10%;
+  display: flex;
+  justify-content: center;
+}
+.navbar a {
+  border-radius: 50px;
+  color: #b1070794;
+  text-decoration: none;
+  margin: 1rem 0;
+  padding: 0.5rem;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  width: 20%;
+}
+.navbar .logo {
+  background-color: transparent;
+  border: none;
+  padding: 0%;
+  margin: 0%;
+  width: auto;
+}
+
+.homeWrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin-top: 2rem;
+  gap: 2rem;
+}
+
+.create-recipe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+}
+.create-recipe form {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+.create-recipe form button {
+  background-color: #b1070794;
+  border: 1px solid #e4baba7a;
+  border-radius: 50px;
+  color: #ffffff;
+  margin: 1rem 0;
+  padding: 1rem;
+  font-size: 14px;
+  cursor: pointer;
+}
+.create-recipe form input,
+.create-recipe form textarea {
+  border: 1px solid #c27c7c;
+  border-radius: 5px;
+  margin: 0.4rem;
+}
+.create-recipe form textarea:focus,
+.create-recipe form input:focus {
+  outline: none;
+}
+.create-recipe form textarea {
+  width: auto;
+  height: 100px;
+}
+.create-recipe form .addIngredientsBtn {
+  background-color: #e4baba7a;
+  border: 1px solid #b1070794;
+  border-radius: 50px;
+  color: #b10707;
+  margin: 1rem 0;
+  padding: 1rem;
+  font-size: 14px;
+  cursor: pointer;
+}
+.create-recipe form .addIngredientsBtn:hover {
+  background-color: #b1070794;
+  color: #ffffff;
+}
+.create-recipe form button:hover {
+  background-color: #e4baba7a;
+  color: #b10707;
+}
+.create-recipe h1 {
+  margin: 1rem;
+}
+
+.recipesWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 60%;
+}
+.recipesWrapper h1 {
+  text-align: center;
+  margin: 1rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 4rem;
+}
+
+li {
+  border: 1px solid #9b9b9b;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 1rem;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+img {
+  width: 100%;
+}
+
+p {
+  max-width: 400px;
+  font-size: 12px;
+}
