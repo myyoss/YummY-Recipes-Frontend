@@ -65,7 +65,7 @@ const Home = () => {
       <div className="recipesWrapper">
         <h1>Recipes</h1>
         <ul>
-          {recipes.map((recipe) => (
+          {recipes && recipes.map((recipe) => (
             <li key={recipe._id}>
               {savedRecipes.includes(recipe._id) && <h2>SAVED</h2>}
               <div>
