@@ -25,7 +25,7 @@ const SavedRecipes = () => {
   }, []);
 
   return (
-    <div>
+    <div className="savedWrapper">
       <h1>Saved Recipes</h1>
       <ul>
         {savedRecipes.map((recipe) => (

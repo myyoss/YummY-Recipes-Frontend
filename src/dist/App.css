@@ -108,6 +108,15 @@ input {
   gap: 2rem;
 }
 
+.savedWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40%;
+  margin-top: 2rem;
+  gap: 2rem;
+}
+
 .create-recipe {
   display: flex;
   flex-direction: column;

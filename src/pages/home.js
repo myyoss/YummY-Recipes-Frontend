@@ -65,26 +65,29 @@ const Home = () => {
       <div className="recipesWrapper">
         <h1>Recipes</h1>
         <ul>
-          {recipes && recipes.map((recipe) => (
-            <li key={recipe._id}>
-              {savedRecipes.includes(recipe._id) && <h2>SAVED</h2>}
-              <div>
-                <h2>{recipe.name}</h2>
-                <button
-                  onClick={() => saveRecipe(recipe._id)}
-                  disabled={isRecipeSaved(recipe._id)}
-                >
-                  {isRecipeSaved(recipe._id) ? "Saved" : "Save"}
-                </button>
-              </div>
-              <div className="instructions">
-                <p>{recipe.instructions}</p>
-              </div>
-              <img src={recipe.imageUrl} alt={recipe.name} />
-              <p>Ingredients: {recipe.ingredients}</p>
-              <p>Cooking Time: {recipe.cookingTime} (minutes)</p>
-            </li>
-          ))}
+          {recipes &&
+            recipes.map((recipe) => (
+              <li key={recipe._id}>
+                {savedRecipes.includes(recipe._id) && (
+                  <h2>SAVED</h2>
+                )}
+                <div>
+                  <h2>{recipe.name}</h2>
+                  <button
+                    onClick={() => saveRecipe(recipe._id)}
+                    disabled={isRecipeSaved(recipe._id)}
+                  >
+                    {isRecipeSaved(recipe._id) ? "Saved" : "Save"}
+                  </button>
+                </div>
+                <div className="instructions">
+                  <p>{recipe.instructions}</p>
+                </div>
+                <img src={recipe.imageUrl} alt={recipe.name} />
+                <p>Ingredients: {recipe.ingredients}</p>
+                <p>Cooking Time: {recipe.cookingTime} (minutes)</p>
+              </li>
+            ))}
         </ul>
       </div>
     </div>
