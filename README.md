@@ -1,4 +1,3 @@
-# YummY-Recipes-Frontend
 YummY-Recipes-App
 
 - REGITER AND LOG-IN
