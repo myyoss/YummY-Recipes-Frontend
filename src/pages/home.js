@@ -57,6 +57,7 @@ const Home = () => {
     }
   };
 
+
   const isRecipeSaved = (id) => savedRecipes.includes(id);
 
   return (
@@ -68,9 +69,7 @@ const Home = () => {
           {recipes &&
             recipes.map((recipe) => (
               <li key={recipe._id}>
-                {savedRecipes.includes(recipe._id) && (
-                  <h2>SAVED</h2>
-                )}
+                {savedRecipes.includes(recipe._id) && <h2>SAVED</h2>}
                 <div>
                   <h2>{recipe.name}</h2>
                   <button

@@ -24,6 +24,7 @@ const SavedRecipes = () => {
     getSavedRecipes();
   }, []);
 
+    
   return (
     <div className="savedWrapper">
       <h1>Saved Recipes</h1>
