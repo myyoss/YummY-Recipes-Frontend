@@ -34,11 +34,14 @@ const SavedRecipes = () => {
             {savedRecipes.includes(recipe._id) && <h1>SAVED</h1>}
             <div>
               <h2>{recipe.name}</h2>
+              <img src={recipe.imageUrl} alt={recipe.name} />
+            </div>
+            <div className="ingredients">
+              <p>{recipe.ingredients}</p>
             </div>
             <div className="instructions">
               <p>{recipe.instructions}</p>
             </div>
-            <img src={recipe.imageUrl} alt={recipe.name} />
             <p>Cooking Time: {recipe.cookingTime} (minutes)</p>
           </li>
         ))}
