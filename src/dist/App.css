@@ -17,7 +17,6 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #f2f2f2;
 }
 
 .auth-container {
@@ -31,6 +30,43 @@ body {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   margin: 20px;
   width: 400px;
+}
+.auth-container .form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.auth-container label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.auth-container button {
+  background-color: #b1070794;
+  border: 1px solid #e4baba7a;
+  border-radius: 50px;
+  color: #ffffff;
+  margin: 1rem 0;
+  padding: 1rem;
+  font-size: 14px;
+  cursor: pointer;
+  width: 100%;
+}
+.auth-container button:hover {
+  background-color: #ffffff7a;
+  color: #b10707;
+}
+.auth-container input {
+  border: 1px solid #c27c7c;
+  border-radius: 5px;
+  margin: 0.4rem;
+  padding: 1rem;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: white;
+}
+.auth-container input:focus {
+  outline: none;
+  background-color: white;
 }
 
 .form-group {
@@ -112,7 +148,7 @@ input {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 42%;
+  width: 40%;
   margin-top: 2rem;
   gap: 2rem;
 }
@@ -186,6 +222,9 @@ input {
 .recipesWrapper h1 {
   text-align: center;
   margin: 1rem;
+}
+.recipesWrapper .heartImg {
+  width: 2rem;
 }
 
 ul {

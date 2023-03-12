@@ -18,8 +18,9 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #f2f2f2;
+  // background-color: #f2f2f2;
 }
+
 
 .auth-container {
   display: flex;
@@ -32,6 +33,51 @@ body {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   margin: 20px;
   width: 400px;
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  button {
+    background-color: #b1070794;
+    border: 1px solid #e4baba7a;
+    border-radius: 50px;
+    color: #ffffff;
+    margin: 1rem 0;
+    padding: 1rem;
+    font-size: 14px;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  button:hover {
+    background-color: #ffffff7a;
+    color: #b10707;
+  }
+
+  input {
+    border: 1px solid rgb(194, 124, 124);
+    border-radius: 5px;
+    margin: 0.4rem;
+    padding: 1rem;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: white;
+  }
+
+  input:focus {
+    outline: none;
+    background-color: white;
+
+  }
+
 }
 
 .form-group {
@@ -120,7 +166,7 @@ input {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 42%;
+  width: 40%;
   margin-top: 2rem;
   gap: 2rem;
 }
@@ -205,6 +251,9 @@ input {
   h1 {
     text-align: center;
     margin: 1rem;
+  }
+  .heartImg{
+    width: 2rem;
   }
 }
 
