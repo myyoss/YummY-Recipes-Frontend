@@ -17,7 +17,6 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #ffffff;
 }
 
 .auth-container {
@@ -265,4 +264,60 @@ img {
 p {
   max-width: 400px;
   font-size: 12px;
+}
+
+.CreateRecipeNavbar {
+  display: none !important;
+}
+
+@media (max-width: 1000px) {
+  .CreateRecipeNavbar {
+    display: block !important;
+  }
+
+  .create-recipe {
+    display: none !important;
+  }
+
+  .homeWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90%;
+    margin: 0rem;
+    padding: 0rem;
+    margin-top: 0rem;
+    gap: 0rem;
+  }
+  .homeWrapper .recipesWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+  }
+
+  .navbar {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 1.4rem;
+    font-size: smaller;
+  }
+  .navbar img {
+    width: 10px;
+    min-width: 40px;
+    padding: 0%;
+    margin: 0%;
+  }
+  .navbar button {
+    font-size: 10px;
+    width: 10%;
+  }
+  .navbar a {
+    font-size: 10px;
+    width: 10%;
+  }
+  .navbar .logo {
+    width: 10%;
+  }
 }
