@@ -226,6 +226,9 @@ input {
 .recipesWrapper .heartImg {
   width: 2rem;
 }
+.recipesWrapper .heartImg img {
+  width: 100%;
+}
 
 ul {
   list-style: none;
