@@ -4,11 +4,10 @@ import { useGetUserID } from "../hooks/useGetUserID";
 import { useNavigate } from "react-router-dom";
 import { useCookies } from "react-cookie";
 
-const CreateRecipe = () => {
+const CreateRecipe = ({ setRecipes }) => {
   const userID = useGetUserID();
   const navigate = useNavigate();
   const [cookies, _] = useCookies(["access_token"]);
-
 
   const [recipe, setRecipe] = useState({
     name: "",
@@ -46,7 +45,7 @@ const CreateRecipe = () => {
         { headers: { authorization: cookies.access_token } }
       );
       alert("Recipe Created!");
-      navigate("/");
+      setRecipes();
     } catch (error) {
       console.log(error);
     }

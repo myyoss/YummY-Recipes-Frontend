@@ -61,7 +61,7 @@ const Home = () => {
 
   return (
     <div className="homeWrapper">
-      <CreateRecipe />
+      <CreateRecipe setRecipes={setRecipes} />
       <div className="recipesWrapper">
         <h1>Recipes</h1>
         <ul>
