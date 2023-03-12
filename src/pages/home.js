@@ -87,7 +87,10 @@ const Home = () => {
                   <p>{recipe.instructions}</p>
                 </div>
                 <img src={recipe.imageUrl} alt={recipe.name} />
-                <p>Ingredients: {recipe.ingredients}</p>
+                <p>Ingredients:</p>
+                {recipe.ingredients.map((ingredient) => (
+                  <div key={ingredient._id}>{ingredient}</div>
+                ))}
                 <p>Cooking Time: {recipe.cookingTime} (minutes)</p>
               </li>
             ))}
