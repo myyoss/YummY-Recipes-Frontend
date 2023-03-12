@@ -20,25 +20,28 @@ const Login = () => {
   const [_, setCookies] = useCookies(["access_token"]);
   const navigate = useNavigate();
 
-  const onSubmit = async (event) => {
-    event.preventDefault();
-    try {
-      const response = await axios.post(
-        "https://yummy-recipes-backend.onrender.com/auth/login/",
-        {
-          username,
-          password,
-        }
-      );
+ const onSubmit = async (event) => {
+   event.preventDefault();
+   try {
+     const response = await axios.post("http://localhost:3001/auth/login/", {
+       username,
+       password,
+     });
 
-      setCookies("access_token", response.data.token);
-      window.localStorage.setItem("userID", response.data.userID);
-      navigate("/");
-
-    } catch (error) {
-      console.log(error);
-    }
-  };
+     if (
+       response.data === "User Password Is Incorrect!" ||
+       response.data === "User Doesn't Exist!"
+     ) {
+       alert("Username Or Password Incorrect!");
+     } else {
+       setCookies("access_token", response.data.token);
+       window.localStorage.setItem("userID", response.data.userID);
+       navigate("/");
+     }
+   } catch (error) {
+     console.log(error);
+   }
+ };
 
   return (
     <Form
