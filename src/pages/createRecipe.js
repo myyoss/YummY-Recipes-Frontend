@@ -59,12 +59,6 @@ const CreateRecipe = () => {
         <label htmlFor="name">Name</label>
         <input type="text" id="name" name="name" onChange={handleOnChange} />
         <label htmlFor="ingredients">Ingredients</label>
-        {/* <input
-          type="text"
-          id="ingredients"
-          name="ingredients"
-          onChange={handleOnChange}
-        /> */}
         {recipe.ingredients.map((ingredient, index) => (
           <input
             key={index}
