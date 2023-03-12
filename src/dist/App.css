@@ -320,4 +320,16 @@ p {
   .navbar .logo {
     width: 10%;
   }
+
+  .auth {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+  }
+
+  .auth-container {
+    width: 20rem;
+  }
 }

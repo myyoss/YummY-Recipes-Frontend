@@ -308,6 +308,7 @@ p {
 }
 
 @media (max-width:1000px) {
+
   .CreateRecipeNavbar {
     display: block !important;
   }
@@ -365,4 +366,15 @@ p {
     }
   }
 
+  .auth {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+  }
+
+  .auth-container {
+    width: 20rem;
+  }
 }
