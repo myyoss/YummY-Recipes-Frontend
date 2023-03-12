@@ -7,8 +7,8 @@ import { useNavigate } from "react-router-dom";
 const Auth = () => {
   return (
     <div className="auth">
-      <Login />
       <Register />
+      <Login />
     </div>
   );
 };
