@@ -153,6 +153,9 @@ input {
   margin-top: 2rem;
   gap: 2rem;
 }
+.savedWrapper .instructions {
+  white-space: pre-wrap;
+}
 
 .create-recipe {
   display: flex;

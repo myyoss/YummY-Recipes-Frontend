@@ -162,13 +162,17 @@ input {
   gap: 2rem;
 }
 
-.savedWrapper{
+.savedWrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 40%;
   margin-top: 2rem;
   gap: 2rem;
+
+  .instructions {
+    white-space: pre-wrap;
+  }
 }
 
 .create-recipe {
@@ -207,7 +211,7 @@ input {
     input:focus {
       outline: none;
     }
-    
+
     textarea {
       width: auto;
       height: 100px;
@@ -246,19 +250,23 @@ input {
   justify-content: space-around;
   align-items: center;
   width: 60%;
+
   // background-color: #796e6e;
   // flex-wrap: nowrap;
   h1 {
     text-align: center;
     margin: 1rem;
   }
-  .heartImg{
+
+  .heartImg {
     width: 2rem;
-    img{
+
+    img {
       width: 100%;
     }
   }
-  .instructions{
+
+  .instructions {
     white-space: pre-wrap;
   }
 }
