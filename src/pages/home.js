@@ -57,7 +57,6 @@ const Home = () => {
     }
   };
 
-
   const isRecipeSaved = (id) => savedRecipes.includes(id);
 
   return (
@@ -88,8 +87,8 @@ const Home = () => {
                 </div>
                 <img src={recipe.imageUrl} alt={recipe.name} />
                 <p>Ingredients:</p>
-                {recipe.ingredients.map((ingredient) => (
-                  <div key={ingredient._id}>{ingredient}</div>
+                {recipe.ingredients.map((ingredient, i) => (
+                  <div key={i}>{ingredient}</div>
                 ))}
                 <p>Cooking Time: {recipe.cookingTime} (minutes)</p>
               </li>
