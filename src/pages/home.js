@@ -69,7 +69,11 @@ const Home = () => {
           {recipes &&
             recipes.map((recipe) => (
               <li key={recipe._id}>
-                {savedRecipes.includes(recipe._id) && <h2>SAVED</h2>}
+                {savedRecipes.includes(recipe._id) && (
+                  <div className="heartImg">
+                    <img src="images/heart.svg" alt="heart.svg" />
+                  </div>
+                )}
                 <div>
                   <h2>{recipe.name}</h2>
                   <button
